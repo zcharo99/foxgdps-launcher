@@ -49,11 +49,11 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: linux-build
-          path: target/release/*
+          path: src-tauri/target/release/*
 
       - name: Upload Windows Artifacts
         if: runner.os == 'Windows'
         uses: actions/upload-artifact@v3
         with:
           name: windows-build
-          path: target/x86_64-pc-windows-gnu/release/*
+          path: src-tauri/target/x86_64-pc-windows-gnu/release/*
